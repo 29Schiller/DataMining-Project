@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff14f318-7fa3-4edc-8eec-346d6ffb6dc0" name="Changes" comment="" />
+    <list default="true" id="ff14f318-7fa3-4edc-8eec-346d6ffb6dc0" name="Changes" comment="Remove &quot;CityPart&quot;">
+      <change afterPath="$PROJECT_DIR$/model/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/clustering/KMeanClustering.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/evaluation_data.arff" beforeDir="false" afterPath="$PROJECT_DIR$/data/evaluation_data.arff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/testing_data.arff" beforeDir="false" afterPath="$PROJECT_DIR$/data/testing_data.arff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/training_data.arff" beforeDir="false" afterPath="$PROJECT_DIR$/data/training_data.arff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataMining-Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataMining-Project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataMining-Project/data/apartment_prices.arff" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataMining-Project/data/apartment_prices.arff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataMining-Project/data/evaluation_data.arff" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataMining-Project/data/evaluation_data.arff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataMining-Project/data/testing_data.arff" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataMining-Project/data/testing_data.arff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataMining-Project/data/training_data.arff" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataMining-Project/data/training_data.arff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataMining-Project/preprocessing/ImportData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataMining-Project/preprocessing/ImportData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataMining-Project/preprocessing/SplitData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataMining-Project/preprocessing/SplitData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/preprocessing/FilterAttribute.java" beforeDir="false" afterPath="$PROJECT_DIR$/preprocessing/FilterAttribute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/preprocessing/ImportData.java" beforeDir="false" afterPath="$PROJECT_DIR$/preprocessing/ImportData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/preprocessing/SplitData.java" beforeDir="false" afterPath="$PROJECT_DIR$/preprocessing/SplitData.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,9 +33,12 @@
       </list>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2pOP18d4bpe9xIgbQSVG0MaroGa" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -26,13 +48,24 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.FilterAtrribute.executor": "Run",
+    "Application.FilterAttribute.executor": "Run",
+    "Application.KMeanClustering.executor": "Run",
+    "Application.LogisticRegressionClassifier.executor": "Run",
+    "Application.SplitData.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "com.github.copilot.settings.ApplicationConfigurable"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="model.classification" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -42,6 +75,30 @@
       <option name="presentableId" value="Default" />
       <updated>1732633933111</updated>
     </task>
+    <task id="LOCAL-00001" summary="Remove &quot;CityPart&quot;">
+      <option name="closed" value="true" />
+      <created>1732635083440</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1732635083440</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Remove &quot;CityPart&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove &quot;CityPart&quot;" />
   </component>
 </project>

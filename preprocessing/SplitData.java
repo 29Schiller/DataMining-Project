@@ -10,9 +10,8 @@ import java.util.Random;
 public class SplitData {
 
     public static void splitData() throws Exception {
-        // Create an instance of DataSource to load the dataset
-        DataSource source = new DataSource("C:\\Users\\tonga\\IdeaProjects\\DataMining-Project\\data\\apartment_prices.arff"); // Replace with your dataset path
-        Instances allData = source.getDataSet(); // Use the instance to call getDataSet()
+        DataSource source = new DataSource("C:\\Users\\tonga\\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\\Documents\\DataMining-Project\\data\\apartment_prices.arff"); // Replace with your dataset path
+        Instances allData = source.getDataSet();
 
         // Set the class index (if not already set)
         if (allData.classIndex() == -1) {
@@ -24,8 +23,8 @@ public class SplitData {
 
         // Split the dataset into training, testing, and validation sets
         int totalInstances = allData.numInstances();
-        int testSize = (int) Math.round(totalInstances * 0.2); // 20% for testing
-        int validationSize = (int) Math.round((totalInstances - testSize) * 0.2); // 20% of the remaining for validation
+        int testSize = (int) Math.round(totalInstances * 0.2);
+        int validationSize = (int) Math.round((totalInstances - testSize) * 0.2);
         int trainSize = totalInstances - testSize - validationSize; // Remaining for training
 
         // Create the subsets
@@ -34,9 +33,9 @@ public class SplitData {
         Instances trainData = new Instances(allData, testSize + validationSize, trainSize);
 
         // Save the subsets as separate ARFF files
-        saveInstances(trainData, "C:\\Users\\tonga\\IdeaProjects\\DataMining-Project\\data\\training_data.arff");
-        saveInstances(testData, "C:\\Users\\tonga\\IdeaProjects\\DataMining-Project\\data\\testing_data.arff");
-        saveInstances(validationData, "C:\\Users\\tonga\\IdeaProjects\\DataMining-Project\\data\\evaluation_data.arff");
+        saveInstances(trainData, "C:\\Users\\tonga\\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\\Documents\\DataMining-Project\\data\\training_data.arff");
+        saveInstances(testData, "C:\\Users\\tonga\\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\\Documents\\DataMining-Project\\data\\testing_data.arff");
+        saveInstances(validationData, "C:\\Users\\tonga\\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\\Documents\\DataMining-Project\\data\\evaluation_data.arff");
 
         System.out.println("Data split and saved successfully:");
         System.out.println("Training data: " + trainSize + " instances");

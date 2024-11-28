@@ -27,7 +27,7 @@ public class FilterAttribute {
             for (int i = 0; i < dataset.numAttributes(); i++) {
                 if (dataset.attribute(i).name().startsWith("CityPart_")) {
                     // Append the index (1-based for Weka) to the string
-                    if (indicesToRemove.length() > 0) {
+                    if (!indicesToRemove.isEmpty()) {
                         indicesToRemove.append(","); // Separate multiple indices with commas
                     }
                     indicesToRemove.append(i + 1); // Weka uses 1-based indexing
@@ -35,11 +35,11 @@ public class FilterAttribute {
             }
 
             // Set the indices to remove if any were found
-            if (indicesToRemove.length() > 0) {
+            if (!indicesToRemove.isEmpty()) {
                 remove.setAttributeIndices(indicesToRemove.toString());
             } else {
                 System.out.println("No attributes starting with 'CityPart_' found.");
-                return; // Exit if there are no attributes to remove
+                return;
             }
 
             // Pass the dataset to the filter
